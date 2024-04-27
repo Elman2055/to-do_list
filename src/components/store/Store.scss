@@ -1,0 +1,75 @@
+@import "../../styles/mixin.scss";
+
+.store {
+  width: 680px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  border-radius: 10px;
+  margin-left: 10px;
+  word-wrap: break-word;
+  color: white;
+
+  @include media-sm {
+    width: 320px;
+    display: flex;
+    align-items: baseline;
+    font-size: 14px;
+  }
+
+  @include media-md {
+    width: 480px;
+  }
+
+  &:last-child {
+    margin-bottom: 20px;
+  }
+
+  & h3 {
+    margin-top: 10px;
+  }
+
+  & .product {
+    margin-left: 10px;
+    width: 229px;
+
+    @include media-md {
+      width: 150px;
+    }
+
+    @include media-sm {
+      width: 88px;
+    }
+  }
+
+  & .priceOn {
+    width: 186px;
+    margin-right: 12px;
+
+    @include media-md {
+      width: 103px;
+    }
+
+    @include media-sm {
+      width: 50px;
+    }
+  }
+
+  & .change {
+    width: 92px;
+    display: flex;
+    justify-content: center;
+
+    & .remove {
+      cursor: pointer;
+      border: none;
+      background: none;
+      padding: 0;
+      font-size: 30px;
+      margin-left: 5px;
+      color: white;
+    }
+  }
+}
