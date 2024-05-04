@@ -1,4 +1,3 @@
-import React from "react";
 import { TStore } from "../typesDataComponents/TypesDataComponents";
 import "./Store.scss";
 
