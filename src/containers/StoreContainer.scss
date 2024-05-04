@@ -24,36 +24,54 @@
 
 .storeContainer {
   height: 50vh;
-  width: 700px;
+  width: 45vw;
   margin: 0 auto;
   margin-top: 20px;
   border-radius: 10px;
   color: brown;
   background: #6dd5fa;
 
+  @include media-xl {
+    height: 46vh;
+    width: 58vw;
+  }
+
+  @include media-l {
+    height: 46vh;
+    width: 60vw;
+  }
+
   @include media-md {
     height: 40vh;
-    width: 500px;
+    width: 70vw;
   }
 
   @include media-sm {
-    height: 35vh;
-    width: 340px;
+    height: 27vh;
+    width: 90vw;
   }
 
   & .title {
-    width: 700px;
+    width: 45vw;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid rgb(220, 85, 22);
     padding-top: 10px;
 
+    @include media-xl {
+      width: 58vw;
+    }
+
+    @include media-l {
+      width: 60vw;
+    }
+
     @include media-md {
-      width: 500px;
+      width: 70vw;
     }
 
     @include media-sm {
-      width: 340px;
+      width: 90vw;
     }
 
     & .listTitle {
@@ -83,18 +101,27 @@
   }
 
   & .storeShell {
-    width: 700px;
+    width: 45vw;
     height: 43.5vh;
     overflow-x: hidden;
 
+    @include media-xl {
+      width: 58vw;
+    }
+
+    @include media-l {
+      height: 35vh;
+      width: 60vw;
+    }
+
     @include media-md {
       height: 34.8vh;
-      width: 500px;
+      width: 70vw;
     }
 
     @include media-sm {
-      height: 29.6vh;
-      width: 340px;
+      height: 22.5vh;
+      width: 90vw;
     }
 
     &::-webkit-scrollbar {
@@ -121,12 +148,22 @@ form {
   align-items: center;
   justify-content: space-between;
 
+  @include media-xl {
+    width: 58vw;
+  }
+
+  @include media-l {
+    width: 60vw;
+    margin-top: 25px;
+  }
+
   @include media-md {
-    width: 500px;
+    width: 70vw;
   }
 
   @include media-sm {
-    width: 340px;
+    height: 22vh;
+    width: 90vw;
   }
 
   & input {
@@ -149,14 +186,68 @@ form {
 
   & .titleOne {
     width: 40vw;
+
+    @include media-xl {
+      width: 50vw;
+    }
+
+    @include media-l {
+      height: 5vh;
+      width: 55vw;
+    }
+
+    @include media-md {
+      width: 63vw;
+    }
+
+    @include media-sm {
+      height: 3vh;
+      width: 78vw;
+    }
   }
 
   & .sumOne {
     width: 32vw;
+
+    @include media-xl {
+      width: 42vw;
+    }
+
+    @include media-l {
+      height: 5vh;
+      width: 47vw;
+    }
+
+    @include media-md {
+      width: 55vw;
+    }
+
+    @include media-sm {
+      height: 3vh;
+      width: 70vw;
+    }
   }
 
   & .manyOne {
     width: 25vw;
+
+    @include media-xl {
+      width: 35vw;
+    }
+
+    @include media-l {
+      height: 5vh;
+      width: 39vw;
+    }
+
+    @include media-md {
+      width: 47vw;
+    }
+
+    @include media-sm {
+      height: 3vh;
+      width: 63vw;
+    }
   }
 
   & .btnContainer {
@@ -164,12 +255,20 @@ form {
     display: flex;
     justify-content: center;
 
+    @include media-xl {
+      width: 58vw;
+    }
+
+    @include media-l {
+      width: 60vw;
+    }
+
     @include media-md {
-      width: 500px;
+      width: 70vw;
     }
 
     @include media-sm {
-      width: 340px;
+      width: 90vw;
     }
 
     & .createBtn {
@@ -182,7 +281,22 @@ form {
       color: white;
       transition: all 0.8s ease;
 
+      @include media-xl {
+        width: 20vw;
+      }
+
+      @include media-l {
+        height: 5vh;
+        width: 24vw;
+      }
+
+      @include media-md {
+        width: 30vw;
+      }
+
       @include media-sm {
+        height: 3vh;
+        width: 43vw;
         font-size: 10px;
       }
 
