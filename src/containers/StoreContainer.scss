@@ -37,7 +37,7 @@
   }
 
   @include media-l {
-    height: 46vh;
+    height: 44vh;
     width: 60vw;
   }
 
@@ -106,21 +106,22 @@
     overflow-x: hidden;
 
     @include media-xl {
+      height: 40vh;
       width: 58vw;
     }
 
     @include media-l {
-      height: 35vh;
+      height: 36vh;
       width: 60vw;
     }
 
     @include media-md {
-      height: 34.8vh;
+      height: 34vh;
       width: 70vw;
     }
 
     @include media-sm {
-      height: 22.5vh;
+      height: 21.2vh;
       width: 90vw;
     }
 

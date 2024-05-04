@@ -140,19 +140,19 @@ const StoreContainer = () => {
         <div className="storeContainer">
           <div className="title">
             <div className="downTitle listTitle">
-              <button className="sort" onClick={() => HandleSort("title", "asc")}>⬆️</button>
+              <button className="sort" onClick={() => HandleSort("title", "asc")}>&uarr;</button>
               <h3>Title</h3>
-              <button className="sort" onClick={() => HandleSort("title", "desc")}>⬇️</button>
+              <button className="sort" onClick={() => HandleSort("title", "desc")}>&darr;</button>
             </div>
             <div className="price listTitle">
-              <button className="sort" onClick={() => HandleSort("price", "asc")}>⬆️</button>
+              <button className="sort" onClick={() => HandleSort("price", "asc")}>&uarr;</button>
               <h3>Price</h3>
-              <button className="sort" onClick={() => HandleSort("price", "desc")}>⬇️</button>
+              <button className="sort" onClick={() => HandleSort("price", "desc")}>&darr;</button>
             </div>
             <div className="stock listTitle">
-              <button className="sort" onClick={() => HandleSort("stock", "asc")}>⬆️</button>
+              <button className="sort" onClick={() => HandleSort("stock", "asc")}>&uarr;</button>
               <h3>Stock</h3>
-              <button className="sort" onClick={() => HandleSort("stock", "desc")}>⬇️</button>
+              <button className="sort" onClick={() => HandleSort("stock", "desc")}>&darr;</button>
             </div>
           </div>
           <div className="storeShell">
