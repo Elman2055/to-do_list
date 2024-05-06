@@ -37,7 +37,7 @@
   }
 
   @include media-l {
-    height: 44vh;
+    height: 300px;
     width: 60vw;
   }
 
@@ -75,7 +75,7 @@
     }
 
     & .listTitle {
-      width: 100px;
+      width: 120px;
       display: flex;
       height: 23px;
     }
@@ -111,7 +111,7 @@
     }
 
     @include media-l {
-      height: 36vh;
+      height: 256px;
       width: 60vw;
     }
 
@@ -154,6 +154,7 @@ form {
   }
 
   @include media-l {
+    height: 180px;
     width: 60vw;
     margin-top: 25px;
   }
@@ -193,7 +194,7 @@ form {
     }
 
     @include media-l {
-      height: 5vh;
+      height: 28px;
       width: 55vw;
     }
 
@@ -215,7 +216,7 @@ form {
     }
 
     @include media-l {
-      height: 5vh;
+      height: 28px;
       width: 47vw;
     }
 
@@ -237,7 +238,7 @@ form {
     }
 
     @include media-l {
-      height: 5vh;
+      height: 28px;
       width: 39vw;
     }
 
@@ -287,7 +288,7 @@ form {
       }
 
       @include media-l {
-        height: 5vh;
+        height: 28px;
         width: 24vw;
       }
 

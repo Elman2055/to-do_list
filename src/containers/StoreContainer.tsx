@@ -132,29 +132,29 @@ const StoreContainer = () => {
 
   return (
     <>
-      {notProduct ? (
+      {notProduct &&
         <div className="notProduct">
           <h2>No products available</h2>
         </div>
-      ) : (
-        <div className="storeContainer">
-          <div className="title">
-            <div className="downTitle listTitle">
-              <button className="sort" onClick={() => HandleSort("title", "asc")}>&uarr;</button>
-              <h3>Title</h3>
-              <button className="sort" onClick={() => HandleSort("title", "desc")}>&darr;</button>
+        }
+           <div className="storeContainer">
+             <div className="title">
+               <div className="downTitle listTitle">
+                <button className="sort" onClick={() => HandleSort("title", "asc")}>&uarr;</button>
+                <h3>Title</h3>
+                <button className="sort" onClick={() => HandleSort("title", "desc")}>&darr;</button>
+              </div>
+              <div className="price listTitle">
+                <button className="sort" onClick={() => HandleSort("price", "asc")}>&uarr;</button>
+                <h3>Price</h3>
+                <button className="sort" onClick={() => HandleSort("price", "desc")}>&darr;</button>
+              </div>
+              <div className="stock listTitle">
+                <button className="sort" onClick={() => HandleSort("stock", "asc")}>&uarr;</button>
+                <h3>Stock</h3>
+                <button className="sort" onClick={() => HandleSort("stock", "desc")}>&darr;</button>
             </div>
-            <div className="price listTitle">
-              <button className="sort" onClick={() => HandleSort("price", "asc")}>&uarr;</button>
-              <h3>Price</h3>
-              <button className="sort" onClick={() => HandleSort("price", "desc")}>&darr;</button>
-            </div>
-            <div className="stock listTitle">
-              <button className="sort" onClick={() => HandleSort("stock", "asc")}>&uarr;</button>
-              <h3>Stock</h3>
-              <button className="sort" onClick={() => HandleSort("stock", "desc")}>&darr;</button>
-            </div>
-          </div>
+           </div>
           <div className="storeShell">
             {product.map((elem) => (
               <Store
@@ -166,14 +166,13 @@ const StoreContainer = () => {
               />
             ))}
           </div>
-        </div>
-      )}
-      <FormContainer
-        onSubmit={OnSubmit}
-        titleValue={setTitle}
-        priceValue={setPrice}
-        stockValue={setStock}
-      />
+         </div>
+        <FormContainer
+          onSubmit={OnSubmit}
+          titleValue={setTitle}
+          priceValue={setPrice}
+          stockValue={setStock}
+        />
     </>
   );
 };
