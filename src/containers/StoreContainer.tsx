@@ -132,15 +132,15 @@ const StoreContainer = () => {
 
   return (
     <>
-      {notProduct &&
-        <div className="notProduct">
+      {notProduct ?
+        (<div className="notProduct">
           <h2>No products available</h2>
-        </div>
-        }
-           <div className="storeContainer">
-             <div className="title">
-               <div className="downTitle listTitle">
-                <button className="sort" onClick={() => HandleSort("title", "asc")}>&uarr;</button>
+        </div>) :
+              (
+         <div className="storeContainer">
+          <div className="title">
+           <div className="downTitle listTitle">
+              <button className="sort" onClick={() => HandleSort("title", "asc")}>&uarr;</button>
                 <h3>Title</h3>
                 <button className="sort" onClick={() => HandleSort("title", "desc")}>&darr;</button>
               </div>
@@ -167,6 +167,7 @@ const StoreContainer = () => {
             ))}
           </div>
          </div>
+              )}
         <FormContainer
           onSubmit={OnSubmit}
           titleValue={setTitle}
